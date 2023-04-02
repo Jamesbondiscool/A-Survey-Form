@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+  <link rel="stylesheet" type="text/css" href="survey.css">
+<div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center">Survey Form</h1>
+    <p id="description" class="description text-center">
+      Let us know how we can improve Jamesbond's codes
+    </p>
+  </header>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Enter your name"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Enter your Email"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="number-label" for="number"
+        >Age<span class="clue">(optional)</span></label
+      >
+      <input
+        type="number"
+        name="age"
+        id="number"
+        min="10"
+        max="99"
+        class="form-control"
+        placeholder="Age"
+      />
+    </div>
+    <div class="form-group">
+      <p>Which option best describes your current role?</p>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>Select current role</option>
+        <option value="student">Student</option>
+        <option value="job">Full Time Job</option>
+        <option value="learner">Full Time Learner</option>
+        <option value="preferNo">Prefer not to say</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>How much do you like my code</p>
+      <label>
+        <input
+          name="user-recommend"
+          value="definitely"
+          type="radio"
+          class="input-radio"
+          checked
+        />Definitely</label
+      >
+      <label>
+        <input
+          name="user-recommend"
+          value="maybe"
+          type="radio"
+          class="input-radio"
+        />Maybe</label
+      >
+
+      <label
+        ><input
+          name="user-recommend"
+          value="not-sure"
+          type="radio"
+          class="input-radio"
+        />Not at all</label
+      >
+    </div>
+<div class="rowTab">
+    <div class="labels">
+      <label for="most-like">What do you like most about my code</label>
+    <div class="form-group">
+      <div class="rightTab">
+        <select id="most-like" name="mostLike" class="dropdown">
+      <option disabled selected value>Select an option</option>
+      <option value="creativity">Creativity</option>
+      <option value="projects">Projects</option>
+      <option value="blog">Blog</option>
+      <option value="openSource">Open Source</option>
+      <option value="easy to understand">Easy to Understand</option>
+    </select>
+      </div>
+    </div>
+    </div>
+      <div class="form-group">
+      <p>
+        Problems with my code that should be improved in the future
+        <span class="clue">(Check all that apply)</span>
+      </p>
+
+      <label
+        ><input
+          name="prefer"
+          value="references-and-resources"
+          type="checkbox"
+          class="input-checkbox"
+        />References and Resources</label
+      >
+      <label>
+        <input
+          name="prefer"
+          value="smaller-lines-of-code-/undercoding"
+          type="checkbox"
+          class="input-checkbox"
+        />Smaller Lines Of Code /Undercoding</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="longer-lines-of-code-/Overcoding"
+          type="checkbox"
+          class="input-checkbox"
+        />Longer Lines of Code /Overcoding</label>
+      
+      <label
+        ><input
+          name="prefer"
+          value="creativity"
+          type="checkbox"
+          class="input-checkbox"
+        />Creativity</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="failing-to-use-current-/updated-code-sets"
+          type="checkbox"
+          class="input-checkbox"
+        />Failing to Use Current /Updated Code Sets</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="not-coding-the-highest-level"
+          type="checkbox"
+          class="input-checkbox"
+        />Not coding the Highest level</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="lack-of-videos"
+          type="checkbox"
+          class="input-checkbox"
+        />Lack of videos</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="not-enough-sites-on-the-portfolio"
+          type="checkbox"
+          class="input-checkbox"
+        />Not enough Sites on the portfolio</label>
+
+        <label><input
+          name="prefer"
+          value="bad-documentation-/missing-documentation-in-some-codes"
+          type="checkbox"
+          class="input-checkbox"
+        />Bad Documentation /Missing Documentation in some codes</label>
+
+        <label
+        ><input
+          name="prefer"
+          value="lack-of-practice"
+          type="checkbox"
+          class="input-checkbox"
+        />Lack Of practice</label>
+
+      <label
+        ><input
+          name="prefer"
+          value="no-diversity-in-codes"
+          type="checkbox"
+          class="input-checkbox"
+        />No diversity in codes</label
+      >
+    </div>
+</div>
+    <div class="form-group">
+      <p>Any comments or suggestions?</p>
+      <textarea
+        id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+    </div>
+    <div class="form-group">
+      <button id="submit" type="submit" class="submit-btn">Submit</button>
+    </div>
+  </form>
+</div>
+<script>
+  // coded by @Jamesbond
+// eslint-disable-next-line no-unused-vars
+const projectName = 'survey-form';
+</script>
+</html>
